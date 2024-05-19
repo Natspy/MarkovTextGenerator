@@ -5,7 +5,7 @@
 .button {
     -fx-background-color: #C9AAD9;
     -fx-text-fill: black;
-    -fx-border-color: grey; /* Ustawienie koloru obramowania na czarny */
+    -fx-border-color: grey;
     -fx-border-width: 0.5px;
     -fx-background-radius: 15px;
     -fx-border-radius: 15px;

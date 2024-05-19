@@ -24,3 +24,4 @@ Po uruchomieniu TMain.main(), postępuj zgodnie z poniższymi krokami:
 
 3. **Generowanie tekstu**: Kliknij przycisk "Generate Sequence" aby wygenerować tekst na podstawie wprowadzonych danych. Wygenerowany tekst pojawi się w polu poniżej.
 
+![Zrzut Ekranu](src/main/resources/screen-app.PNG)

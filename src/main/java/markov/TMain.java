@@ -48,9 +48,17 @@ public class TMain extends Application {
         generateButton.setOnAction(e -> {
             if (markov != null) {
                 String kevent = kEventField.getText();
-                int length = Integer.parseInt(lengthField.getText());
-                String result = markov.gen(kevent, length);
-                textArea.appendText("Generated sequence: " + result + "\n");
+                if (lengthField.getText().isBlank() || kEventField.getText().isBlank()) {
+                    textArea.appendText("Initial k-event or length of sequence cannot be empty!\n");
+                } else {
+                    try {
+                        int length = Integer.parseInt(lengthField.getText());
+                        String result = markov.gen(kevent, length);
+                        textArea.appendText("Generated sequence: " + result + "\n");
+                    } catch (NumberFormatException ex) {
+                        textArea.appendText("Please enter a valid integer for the length.\n");
+                    }
+                }
             } else {
                 textArea.appendText("Please load a log file first.\n");
             }

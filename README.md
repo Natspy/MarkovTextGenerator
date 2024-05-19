@@ -12,9 +12,23 @@ Znajduje się w niej implementacja metod do wczytywania tekstu z pliku, budowy �
 
 Klasa `TMain` stanowi GUI aplikacji. Zawiera prosty interfejs z polami do wprowadzenia danych wejściowych (początkowego fragmentu k-event i długości generowanego tekstu) oraz przyciskami do obsługi akcji wczytywania pliku i generowania tekstu.
 
+### Prerequisites
+
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC)
+- [Java 21](https://www.oracle.com/pl/java/technologies/downloads/#jdk21-windows)
+- [JavaFX w wersji 21.x](https://gluonhq.com/products/javafx/)
+
+### Konfiguracja
+
+Przed pierwszym uruchomieniem aplikacji, wykonaj następujące kroki w IntelliJ IDEA:
+
+1. Przejdź do menu Run -> Edit Configurations -> Add VM options.
+3. W polu "VM options" wklej: `--module-path <ścieżka do folderu 'lib' pobranego JavaFX SDK> --add-modules=javafx.controls` wstawiając swoją ścieżkę do SDK JavaFX.
+4. Zapisz zmiany i uruchom metodę `TMain.main()`.
+
 ### Korzystanie z aplikacji
 
-Po uruchomieniu TMain.main(), postępuj zgodnie z poniższymi krokami:
+Po uruchomieniu `TMain.main()`, postępuj zgodnie z poniższymi krokami:
 
 1. **Wczytanie pliku**: Kliknij przycisk "Load Log File" i wybierz plik tekstowy zawierający łańcuch znaków. Możesz użyć przykładowego pliku `logfile.txt` zlokalizowanym w `src/main/resources/markov/logfile.txt` lub dowolnego innego pliku tekstowego.
 

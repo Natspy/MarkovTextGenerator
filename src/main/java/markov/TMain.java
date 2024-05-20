@@ -77,7 +77,6 @@ public class TMain extends Application {
         Image icon = new Image(getClass().getResourceAsStream("/icon.png"));
         primaryStage.getIcons().add(icon);
 
-        primaryStage.setScene(scene);
         primaryStage.setTitle("Markov Chain Text Generator");
         primaryStage.setScene(scene);
         primaryStage.show();

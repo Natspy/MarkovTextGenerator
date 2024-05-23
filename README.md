@@ -12,7 +12,7 @@ Znajduje się w niej implementacja metod do wczytywania tekstu z pliku, budowy �
 
 Klasa `TMain` stanowi GUI aplikacji. Zawiera prosty interfejs z polami do wprowadzenia danych wejściowych (początkowego fragmentu k-event i długości generowanego tekstu) oraz przyciskami do obsługi akcji wczytywania pliku i generowania tekstu.
 
-### Prerequisites
+### Wymagania
 
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC)
 - [Java 21](https://www.oracle.com/pl/java/technologies/downloads/#jdk21-windows)
